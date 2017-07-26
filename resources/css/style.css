@@ -1,3 +1,9 @@
+/*
+
+Orange color: #a15512
+
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +23,10 @@ html {
     margin: 0 auto 0 auto; /* or 0 auto */
 }
 
+/*------------------------------------------*/
+/* RESUABLE COMPONENTS                      */
+/*------------------------------------------*/
+
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
@@ -30,6 +40,44 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding: 5px 0 5px 0; /* 5px 0 */
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;   
+    border-bottom: 2px solid #a15512;
 }
 
 h1 {

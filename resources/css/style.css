@@ -168,7 +168,8 @@ h3 {
 
 /*  -------- BUTTONS --------- */
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -184,7 +185,8 @@ h3 {
 }
 
 .btn-ghost:link,
-.btn-ghost:visited {
+.btn-ghost:visited,
+input[type=submit] {
     border: 1px solid #e67e22;
     color: #e67e22;
 }
@@ -202,7 +204,8 @@ h3 {
 }
 
 .btn-ghost:hover,
-.btn-ghost:active {
+.btn-ghost:active,
+input[type=submit] {
     border: 1px solid #e67e22;
 }
 
@@ -403,6 +406,25 @@ cite img {
     padding-bottom: 20px;
 }
 
-.plan-box btn {
-    
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    height: 100px;
+}
+
+*:focus {
+    outline: none;
 }
